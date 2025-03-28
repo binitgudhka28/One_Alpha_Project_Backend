@@ -6,10 +6,10 @@ import multiprocessing as mp
 from time import sleep
 
 # Database Credentials
-mysql_host = 'sql12.freesqldatabase.com'
-mysql_user = 'sql12766961'
-mysql_password = 'VKqi5BgQpv'
-mysql_database = 'sql12766961'
+mysql_host = 'localhost'
+mysql_user = 'root'
+mysql_password = 'root'
+mysql_database = 'stock'
 
 # Function to fetch stock data and insert into MySQL
 def fetch_data(symbol):

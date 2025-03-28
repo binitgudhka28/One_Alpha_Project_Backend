@@ -76,7 +76,7 @@ def fetch_and_insert_data(symbols):
 
 if __name__ == '__main__':
     # Load stock symbols from CSV
-    df_symbols = pd.read_csv(r"D:\USERS HP\Desktop\DC_PROJECT\One_Alpha_Project\MOBILE_PROJECT1\Company_list1.csv")
+    df_symbols = pd.read_csv(r"C:\Users\Admin\Downloads\One_Alpha_Project-main\One_Alpha_Project-main\MOBILE_PROJECT1\Company_list1.csv")
 
     # Append ".NS" to each symbol
     df_symbols['symbol'] = df_symbols['symbol'] + '.NS'

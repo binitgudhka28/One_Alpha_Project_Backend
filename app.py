@@ -9,7 +9,7 @@ CORS(app)
 @app.route('/stocks', methods=['GET'])
 def get_stocks():
     # Connect to the MySQL database
-    db = MySQLdb.connect(host='localhost', user='root', password='Aryabhav@2004', db='stock')
+    db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
     cursor = db.cursor()
 
     # Execute the query to retrieve distinct symbols
@@ -34,7 +34,7 @@ def get_stocks():
 @app.route('/stocks1', methods=['GET'])
 def get_stocks1():
     # Connect to the MySQL database
-    db = MySQLdb.connect(host='localhost', user='root', password='Aryabhav@2004', db='stock')
+    db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
     cursor = db.cursor()
 
     # Execute the query to retrieve distinct symbols
@@ -59,7 +59,7 @@ def get_stocks1():
 @app.route('/stocks2', methods=['GET'])
 def get_stocks2():
     # Connect to the MySQL database
-    db = MySQLdb.connect(host='localhost', user='root', password='Aryabhav@2004', db='stock')
+    db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
     cursor = db.cursor()
 
     # Execute the query to retrieve distinct symbols
@@ -84,7 +84,7 @@ def get_stocks2():
 @app.route('/stocks3', methods=['GET'])
 def get_stocks3():
     # Connect to the MySQL database
-    db = MySQLdb.connect(host='localhost', user='root', password='Aryabhav@2004', db='stock')
+    db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
     cursor = db.cursor()
 
     # Execute the query to retrieve distinct symbols
@@ -110,7 +110,7 @@ def get_stocks3():
 @app.route('/stocks4', methods=['GET'])
 def get_stocks4():
     # Connect to the MySQL database
-    db = MySQLdb.connect(host='localhost', user='root', password='Aryabhav@2004', db='stock')
+    db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
     cursor = db.cursor()
 
     # Execute the query to retrieve distinct symbols
@@ -136,7 +136,7 @@ def get_stocks4():
 @app.route('/stock_data/<symbol>/<time_range>', methods=['GET'])
 def get_stock_data(symbol, time_range):
     # Connect to the MySQL database
-    db = MySQLdb.connect(host='localhost', user='root', passwd='Aryabhav@2004', db='stock')
+    db = MySQLdb.connect(host='localhost', user='root', passwd='root', db='stock')
     cursor = db.cursor()
 
     # Determine the start and end dates based on the time range

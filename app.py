@@ -6,7 +6,7 @@ import yfinance as yf
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/stocks', methods=['GET'])
+@app.route('/templates/stocks', methods=['GET'])
 def get_stocks():
     # Connect to the MySQL database
     db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
@@ -31,7 +31,7 @@ def get_stocks():
         # If it's a regular request, render the HTML template
         return render_template('stocks.html', symbols=symbols)
     
-@app.route('/stocks1', methods=['GET'])
+@app.route('/templates//stocks1', methods=['GET'])
 def get_stocks1():
     # Connect to the MySQL database
     db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
@@ -56,7 +56,7 @@ def get_stocks1():
         # If it's a regular request, render the HTML template
         return render_template('stocks1.html', symbols=symbols)
 
-@app.route('/stocks2', methods=['GET'])
+@app.route('/templates/stocks2', methods=['GET'])
 def get_stocks2():
     # Connect to the MySQL database
     db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
@@ -81,7 +81,7 @@ def get_stocks2():
         # If it's a regular request, render the HTML template
         return render_template('stocks2.html', symbols=symbols)
 
-@app.route('/stocks3', methods=['GET'])
+@app.route('/templates/stocks3', methods=['GET'])
 def get_stocks3():
     # Connect to the MySQL database
     db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
@@ -107,7 +107,7 @@ def get_stocks3():
         return render_template('stocks3.html', symbols=symbols)
     
 
-@app.route('/stocks4', methods=['GET'])
+@app.route('/templates/stocks4', methods=['GET'])
 def get_stocks4():
     # Connect to the MySQL database
     db = MySQLdb.connect(host='localhost', user='root', password='root', db='stock')
